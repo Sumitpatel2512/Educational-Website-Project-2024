@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #f6d365, #fda085);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px 50px;
+            background: linear-gradient(120deg, rgb(247, 211, 145), #f57552);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06); 
+            z-index: 999;
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+
+        #header p{
+            font-size: 30px;
+            color: black;
+        }
+
+        #navbar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #navbar li{
+            list-style: none;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        #navbar li a{
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+            transition: 0.3s ease;
+        }
+
+        #navbar li a:hover,
+        #navbar li a.active{
+            color: #088178;
+        }
+
+        #navbar li a.active::after,
+        #navbar li a:hover::after{
+            content: "";
+            width: 30%;
+            height: 2px;
+            background: #088178;
+            position: absolute;
+            bottom: -4px;
+            left: 20px;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .container h2{
+            color: black;
+        }
+
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .course {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .course img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+
+        .course h3 {
+            font-size: 24px;
+            color: #0056b3;
+            margin-bottom: 10px;
+        }
+
+        .course p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .course a {
+            display: block;
+            background-color: #00b3e6;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .course a:hover {
+            background-color: #008bb0;
+        }
+
+        .course:hover {
+            transform: translateY(-5px);
+            transition: 0.3s ease-in-out;
+        }
+
+        footer {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="header">
+        <p>Educational Website</p>
+        <div>
+            <ul id="navbar">    
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="course.html">Courses</a></li>
+                <li><a href="department.html">Departments</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Admission.html">Admission</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2><u>Explore Our Courses</u></h2>
+        <div class="courses">
+
+            <div class="course">
+                <img src="engi.jpg" alt="Engineering">
+                <h3>Engineering</h3>
+                <p>The engineering works are of a very high class, and from long generations of experience the farmer knows how best to use his water.</p>
+                <a href="engineering.html">Learn More</a>
+            </div>
+
+            <div class="course">
+                <img src="com.avif" alt="Computers">
+                <h3>Computers</h3>
+                <p>In the new study, the researchers used a computer model to look at the effects of different factors on the shift of the poles.</p>
+                <a href="computers.html">Learn More</a>
+            </div>
+
+            <div class="course">
+                <img src="ar.jfif" alt="Architecture">
+                <h3>Architecture</h3>
+                <p>The spire was part of the Copenhagen skyline and often cited as an example of the city’s renaissance architecture.</p>
+                <a href="architecture.html">Learn More</a>
+            </div>
+
+            <div class="course">
+                <img src="fash.jfif" alt="Design">
+                <h3>Design</h3>
+                <p>For those lucky enough to design and build their own house, there is a lot that goes into the planning.</p>
+                <br><br><br>
+                <a href="design.html">Learn More</a>
+            </div>
+
+            <div class="course">
+                <img src="li.jpg" alt="Liberal Arts">
+                <h3>Liberal Arts / Management Studies</h3>
+                <p>The liberal arts are basic college subjects in the humanities, like English, history, and philosophy. Most universities don't consider professional subjects, like engineering, to be part of the liberal arts.</p>
+                <a href="liberal.html">Learn More</a>
+            </div>
+
+            <div class="course">
+                <img src="science.jfif" alt="Sciences">
+                <h3>Sciences</h3>
+                <p>The best discoveries in science are very simple. Physics is the best example of a science which has developed strong, abstract theories.</p>
+                <br><br><br>
+                <a href="science.html">Learn More</a>
+            </div>
+
+            <div class="course">
+                <img src="agri.jfif" alt="Agriculture">
+                <h3>Agriculture</h3>
+                <p>In one example of an agricultural society, a farmer tills part of the very limited land in Nepal flat enough to sustain agriculture.</p>
+                <br>
+                <a href="agriculture.html">Learn More</a>
+            </div>
+
+            <div class="course">
+                <img src="nursing.avif" alt="Nursing">
+                <h3>Nursing</h3>
+                <p>Nursing Care Plan means a plan of care developed by a nurse that describes the medical, nursing, psychosocial, and other needs of a child and how those needs shall be met.</p>
+                <a href="nursing.html">Learn More</a>
+            </div>
+
+            <div class="course">
+                <img src="phy.jfif" alt="Physiotherapy">
+                <h3>Physiotherapy</h3>
+                <p>Physio-therapy and occupational therapy have been introduced into many of our <br> hospitals and rehabilitation centres with amazing results.</p>
+                <a href="physiotherapy.html">Learn More</a>
+            </div>
+
+            <div class="course">
+                <img src="homo.jfif" alt="Homoeopathic Medical College & Hospital">
+                <h3>Homoeopathic Medical College & Hospital</h3>
+                <p>Individuals looking for safe and natural courses of treatment that cause limited side effects compared to traditional medications can benefit from homeopathy.</p>
+                <a href="homoeo.html">Learn More</a>
+            </div>
+
+            <div class="course">
+                <img src="pharmacy.jfif" alt="Pharmacy">
+                <h3>Pharmacy</h3>
+                <p>Pharmacy is the science and practice of discovering, producing, preparing, dispensing, reviewing and monitoring medications, aiming to ensure the safe, effective, and affordable use of medicines.</p>
+                <a href="pharmacy.html">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>@2024 Educational Website.</p>
+    </footer>
+
+</body>
+</html>

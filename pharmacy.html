@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Fee Table with Explore Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #f6d365, #fda085);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        #header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px 50px;
+            background: linear-gradient(120deg, rgb(247, 211, 145), #f57552);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06); 
+            z-index: 999;
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+
+        #header p{
+            font-size: 30px;
+            color: black;
+        }
+
+        #navbar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #navbar li{
+            list-style: none;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        #navbar li a{
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+            transition: 0.3s ease;
+        }
+
+        #navbar li a:hover,
+        #navbar li a.active{
+            color: #088178;
+        }
+
+        #navbar li a.active::after,
+        #navbar li a:hover::after{
+            content: "";
+            width: 30%;
+            height: 2px;
+            background: #088178;
+            position: absolute;
+            bottom: -4px;
+            left: 20px;
+        }
+        
+        .text h1{
+            text-align: center;
+            color: black;
+        }
+
+        table {
+            margin: 120px 0;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 6px;
+        }
+        
+        th {
+            background-color: #d8e9d1;
+            font-weight: bold;
+        }
+
+        tr{
+            background-color: #fff;
+        }
+        
+        td[rowspan] {
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        thead th {
+            background-color: #b9d7a1;
+            color: black;
+        }
+
+        .explore-btn {
+            padding: 6px 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .explore-btn:hover {
+            background-color: #45a049;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            margin: 20px 650px;
+            padding: 10px 20px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .back-btn:hover {
+            background-color: #e41f1f;
+        }
+
+        footer {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            border-top: 1px solid #ddd;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section id="header">
+        <p>Educational Website</p>
+        <div>
+            <ul id="navbar">    
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="course.html">Courses</a></li>
+                <li><a href="department.html">Departments</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Admission.html">Admission</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="text">
+        <h1><u>Pharmacy</u></h1>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Course Name</th>
+                <th>Total Intake</th>
+                <th>Duration</th>
+                <th>Tuition Fees Per Year (Rs.)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>B.Pharm</td>
+                <td>60</td>
+                <td>4 years</td>
+                <td>Rs. 90,000/-</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="course.html" class="back-btn">Back</a>
+
+    <footer>
+        <p>@2024 Educational Website.</p>
+    </footer>
+</body>
+</html>
